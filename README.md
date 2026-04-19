@@ -1,4 +1,4 @@
-# devcontainer-claude
+# devcontainer-node-claude
 
 A Dev Container setup for running [Claude Code](https://claude.ai/code) with a network firewall that restricts outbound traffic to a curated allowlist.
 
