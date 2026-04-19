@@ -10,7 +10,7 @@ A Dev Container setup for running [Claude Code](https://claude.ai/code) with a n
 - **zsh** with Oh My Zsh (robbyrussell theme), fzf, autosuggestions, and completions
 - **git-delta** for improved diff output
 - Persistent shell history and Claude config via Docker volumes
-- VS Code extensions for Nuxt / Vue development pre-configured
+- VS Code extensions for general Node.js development pre-configured
 
 ## Requirements
 

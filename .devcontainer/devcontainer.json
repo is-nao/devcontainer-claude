@@ -6,14 +6,9 @@
   "customizations": {
     "vscode": {
       "extensions": [
-        "antfu.iconify",
-        "bradlc.vscode-tailwindcss",
         "dbaeumer.vscode-eslint",
         "editorconfig.editorconfig",
         "esbenp.prettier-vscode",
-        "nuxt.mdc",
-        "nuxtr.nuxtr-vscode",
-        "vue.volar",
         "ms-azuretools.vscode-docker"
       ],
       "settings": {
