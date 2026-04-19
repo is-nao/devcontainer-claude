@@ -1,0 +1,28 @@
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        TZ: ${TZ:-Asia/Tokyo}
+        GIT_DELTA_VERSION: 0.19.1
+        ZSH_IN_DOCKER_VERSION: 1.2.1
+    cap_add:
+      - NET_ADMIN
+      - NET_RAW
+    volumes:
+      - ../:/workspace:cached
+      - claude-config:/home/node/.claude
+      - bash-history:/commandhistory
+    environment:
+      - NODE_OPTIONS=--max-old-space-size=4096
+      - CLAUDE_CONFIG_DIR=/home/node/.claude
+      # ファイアウォールを有効にする場合は ENABLE_FIREWALL=true を設定
+      - ENABLE_FIREWALL=false
+    ports:
+      - 3000:3000
+    command: sleep infinity
+
+volumes:
+  claude-config:
+  bash-history:
